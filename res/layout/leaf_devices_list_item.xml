@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name" />
+
+    <RelativeLayout
+        android:id="@+id/device_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_name"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp" >
+
+        <LinearLayout
+            android:id="@+id/device_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="状态：" />
+
+            <TextView
+                android:id="@+id/device_status_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/device_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_below="@+id/device_status">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="类型：" />
+
+            <TextView
+                android:id="@+id/device_type_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_below="@+id/device_type">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="地址：" />
+
+            <TextView
+                android:id="@+id/device_address_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

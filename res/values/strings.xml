@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BleTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="ble_not_supported">ble不支持</string>
+    <string name="ble_enable_success">ble开启成功</string>
+    <string name="ble_enable_failed">ble开启失败</string>
+    <string name="ble_no_find">没有找到任何的设备</string>
+
+</resources>
